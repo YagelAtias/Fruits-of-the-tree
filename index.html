@@ -8,27 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'frank-ruhl': ['"Frank Ruhl Libre"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-<h1>פירות האילן</h1>
-<p class="introduction">
+<body class="font-frank-ruhl text-right" dir="rtl">
+<h1 class="text-5xl font-extrabold text-center my-8 leading-tight">פירות האילן</h1>
+<p class="text-lg font-semibold text-center mb-4">
     חברים יקרים שלום רב,
     <br/>
-    אתר זה נבנה על בשביל לשמר ולהפיץ את ההודעות שהעביר לי מורי ורבי, הרב אילן שמעון דניאלי שליט"א.
+    אתר זה נבנה בשביל לשמר ולהפיץ את ההודעות שהעביר לי מורי ורבי, הרב אילן שמעון דניאלי שליט"א.
     <br/>
     הודעות אלו כוללות מנהגים הקשורים לחגים הבאים לקראתנו לשלום, לחצו על שם החג הקרב על מנת לצפות במנהגים.
     <br/>
     יהי רצון שהקדוש ברוך הוא יזכה אותנו ויתן לנו חיים ארוכים ומתוקנים מלאים בתורה ובמצוות. חג שמח!
 </p>
-<div id="holiday-container">
+<div class="flex justify-center gap-8">
     <a href="RoshHashana.html">
-        <h2>ראש השנה</h2>
+        <h2 class="text-2xl font-semibold">ראש השנה</h2>
     </a>
     <a href="YomKippur.html">
-        <h2>יום הכיפורים</h2>
+        <h2 class="text-2xl font-semibold">יום הכיפורים</h2>
     </a>
     <a href="Shavuot.html">
-        <h2>שבועות</h2>
+        <h2 class="text-2xl font-semibold">שבועות</h2>
     </a>
 </div>
 </body>
