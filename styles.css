@@ -35,3 +35,9 @@ p {
     font-size: 1.125rem;
     margin-bottom: 1rem;
 }
+
+#holiday-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
