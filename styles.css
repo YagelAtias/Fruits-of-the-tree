@@ -36,6 +36,11 @@ p {
     margin-bottom: 1rem;
 }
 
+.introduction{
+    text-align: center;
+    font-weight: 600;
+}
+
 #holiday-container {
     display: flex;
     justify-content: center;
