@@ -2,12 +2,34 @@
   list-style-type: hebrew;
 }
 
-.main-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  object-fit: cover;
+body.index-bg {
+  background-image: url("./assets/Lemon_Orchard_in_the_Galilee_by_David_Shankbone.jpg");
+}
+
+body.rosh-hashana-bg {
+  background-image: url("./assets/pexels-roman-ziomka-262758540-15662091.jpg");
+}
+
+body.yom-kippur-bg {
+  background-image: url("./assets/Talit.jpg");
+}
+
+@media (max-width: 768px) {
+  body.index-bg {
+    background-image: url("./assets/orchard-mobile.jpg");
+  }
+  body.rosh-hashana-bg {
+    background-image: url("./assets/shofar-mobile.jpg");
+  }
+  body.yom-kippur-bg {
+    background-image: url("./assets/talit-mobile.jpg");
+  }
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
