@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>פירות האילן</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'frank-ruhl': ['"Frank Ruhl Libre"', 'serif'],
-                    },
-                    colors: {
-                        'sky-blue': '#5382C9',
-                    },
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "frank-ruhl": ['"Frank Ruhl Libre"', "serif"],
+            },
+            colors: {
+              "sky-blue": "#5382C9",
+            },
+          },
+        },
+      };
     </script>
-    <style>
-        .list-hebrew {
-            list-style-type: hebrew;
-        }
+  </head>
+  <body
+    class="font-frank-ruhl text-right leading-relaxed tracking-wide p-0 m-0 relative"
+    dir="rtl"
+  >
+    <picture>
+      <source
+        srcset="assets/orchard-mobile.jpg"
+        media="(max-width: 768px)"
+      />
+      <img
+        src="assets/Lemon_Orchard_in_the_Galilee_by_David_Shankbone.jpg"
+        alt="A lemon orchard in the Galilee with rolling hills in the background."
+        class="main-bg"
+      />
+    </picture>
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        .pardes-bg {
-            background-image: url("Lemon_Orchard_in_the_Galilee_by_David_Shankbone.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-    </style>
-</head>
-<body class="font-frank-ruhl text-right leading-relaxed tracking-wide p-0 m-0 pardes-bg relative" dir="rtl">
-<div class="absolute inset-0 bg-black opacity-50 z-0"></div>
-
-<div class="relative z-10 text-white p-4">
-    <h1 class="text-3xl md:text-5xl font-extrabold text-center my-5 leading-tight border-b-2 border-white pb-2">פירות האילן</h1>
-    <p class="text-base md:text-lg font-semibold text-center mb-4 px-4">
+    <div class="relative z-10 text-white p-4">
+      <h1
+        class="text-3xl md:text-5xl font-extrabold text-center my-5 leading-tight border-b-2 border-white pb-2"
+      >
+        פירות האילן
+      </h1>
+      <p class="text-base md:text-lg font-semibold text-center mb-4 px-4">
         חברים יקרים שלום רב,
-        <br/>
-        אתר זה נבנה בשביל לשמר ולהפיץ את ההודעות שהעביר לי מורי ורבי, הרב אילן שמעון דניאלי שליט"א.
-        <br/>
-        הודעות אלו כוללות מנהגים הקשורים לחגים הבאים לקראתנו לשלום, לחצו על שם החג הקרב על מנת לצפות במנהגים.
-        <br/>
-        יהי רצון שהקדוש ברוך הוא יזכה אותנו ויתן לנו חיים ארוכים ומתוקנים מלאים בתורה ובמצוות. חג שמח!
-    </p>
-    <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-        <a href="RoshHashana.html" class="p-4 bg-sky-blue rounded-lg shadow-md hover:bg-gray-500 transition-colors">
-            <h2 class="text-2xl font-semibold">ראש השנה</h2>
+        <br />
+        אתר זה נבנה בשביל לשמר ולהפיץ את ההודעות שהעביר לי מורי ורבי, הרב אילן
+        שמעון דניאלי שליט"א.
+        <br />
+        הודעות אלו כוללות מנהגים הקשורים לחגים הבאים לקראתנו לשלום, לחצו על שם
+        החג הקרב על מנת לצפות במנהגים.
+        <br />
+        יהי רצון שהקדוש ברוך הוא יזכה אותנו ויתן לנו חיים ארוכים ומתוקנים מלאים
+        בתורה ובמצוות. חג שמח!
+      </p>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8"
+      >
+        <a
+          href="RoshHashana.html"
+          class="p-4 bg-sky-blue rounded-lg shadow-md hover:bg-gray-500 transition-colors"
+        >
+          <h2 class="text-2xl font-semibold">ראש השנה</h2>
         </a>
-        <a href="YomKippur.html" class="p-4 bg-sky-blue rounded-lg shadow-md hover:bg-gray-500 transition-colors">
-            <h2 class="text-2xl font-semibold">יום הכיפורים</h2>
+        <a
+          href="YomKippur.html"
+          class="p-4 bg-sky-blue rounded-lg shadow-md hover:bg-gray-500 transition-colors"
+        >
+          <h2 class="text-2xl font-semibold">יום הכיפורים</h2>
         </a>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ראש השנה</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'frank-ruhl': ['"Frank Ruhl Libre"', 'serif'],
-                    },
-                    colors: {
-                        'pale-brown': '#99584C',
-                    },
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "frank-ruhl": ['"Frank Ruhl Libre"', "serif"],
+            },
+            colors: {
+              "pale-brown": "#99584C",
+            },
+          },
+        },
+      };
     </script>
-    <style>
-        .list-hebrew {
-            list-style-type: hebrew;
-        }
+  </head>
+  <body
+    class="font-frank-ruhl text-right leading-relaxed tracking-wide p-0 m-0 relative"
+    dir="rtl"
+  >
+    <picture>
+      <source
+        srcset="assets/talit-mobile.jpg"
+        media="(max-width: 768px)"
+      />
+      <img
+        src="assets/Talit.jpg"
+        alt="A tallit, or Jewish prayer shawl, resting on a wooden surface."
+        class="main-bg"
+      />
+    </picture>
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        .yom-kippur-bg {
-            background-image: url("Talit.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-    </style>
-</head>
-<body class="font-frank-ruhl text-right leading-relaxed tracking-wide p-0 m-0 yom-kippur-bg relative" dir="rtl">
-<div class="absolute inset-0 bg-black opacity-50 z-0"></div>
-
-<div class="relative z-10 text-white">
-    <div class="flex justify-center mt-4">
-        <a href="index.html"
-           class="inline-block px-6 py-2 text-sm text-white bg-pale-brown rounded-full transition-colors duration-300 hover:bg-amber-800">חזרה
-            לדף הבית
-        </a>
-    </div>
-    <h1 class="text-3xl md:text-5xl font-extrabold text-center my-5 leading-tight border-b-2 border-white pb-2">ערב יום
-        הכיפורים </h1>
-    <div class="container px-4 md:px-9 mt-8">
+    <div class="relative z-10 text-white">
+      <nav class="flex justify-center gap-4 py-4">
+        <a
+          href="index.html"
+          class="inline-block px-4 py-2 text-sm text-white bg-pale-brown rounded-full transition-colors duration-300 hover:bg-amber-800"
+          >דף הבית</a
+        >
+        <a
+          href="RoshHashana.html"
+          class="inline-block px-4 py-2 text-sm text-white bg-pale-brown rounded-full transition-colors duration-300 hover:bg-amber-800"
+          >ראש השנה</a
+        >
+      </nav>
+      <h1
+        class="text-3xl md:text-5xl font-extrabold text-center my-5 leading-tight border-b-2 border-white pb-2"
+      >
+        ערב יום הכיפורים
+      </h1>
+      <div class="container px-4 md:px-9 mt-8">
         <ol class="list-hebrew list-outside space-y-4 px-6 text-xl md:text-2xl">
-            <li> " כל האוכל בתשיעי מעלה עליו הכתוב כאילו התענה תשיעי ועשירי." לכן ישנה מצווה גדולה להרבות בסעודות
-                שביכולתם לתקן את כל האכילות של כל השנה. ע"פ המקובלים יש עניין לאכול 6 סעודות עם לחם.
-                כמו כן ראוי לאכול דגים בבוקר.
-            </li>
-            <li>
-                תשובה - להרהר המון בתשובה על כל פשעיו...יש קונה עולמו בשעה אחת, אפילו ברצון תשובה אחד.
-            </li>
-            <li>
-                בקשת סליחה - נכון להחזיר כל חוב או גזילה שיש בידך, ראוי ומומלץ לבקש סליחה מהאישה והילדים.
-            </li>
-            <li>
-                כפרות כדאי להקפיד על הנוסח חליפתי תמורתי כפרתי ולכוון ראשי תיבות חת"ך שהוא שם קדוש שמועיל לגזור את הדין.
-            </li>
-            <li>
-                טבילה רצוי מאד מאד לטבול בערב יוה"כ 5 טבילות כנגד חמש טבילות של כהן גדול ולכוון:
-                <br>
-                <ol class="list-decimal ps-10">
-                    <li>להסיר כל טומאה מעליו.</li>
-                    <li>להסיר הכעס.</li>
-                    <li>לתקן הגבורות בחסדים.</li>
-                    <li>להסיר בגדי החול.</li>
-                    <li>ללבוש בגדי החג של יום הכיפורים.</li>
-                </ol>
-            </li>
-            <li>
-                הדלקת נרות - יש להדליק נר שידלוק כל יוה"כ כדי שנבדיל על נר ששבת. כמוכ כדאי להדליק נר נשמה לעילוי נשמת
-                שרה
-                (לפי הזוהר העקידה הייתה ביוהכ ואז נפטרה שרה). וכן לע"נ רבי עקיבא שזה יום פטירתו.
-            </li>
-            <li>
-                תפילת מנחה מוקדמת עם וידוי גדול.
-            </li>
-            <li>
-                אחרי סעודה מפסקת לברך את הילדים בברכת האבות.
-            </li>
-            <li>
-                קבלת יוה"כ. -נכון להקדים קצת את קדושת היום.
-            </li>
-            <li>
-                כל נדרי - בפתיחת ההיכל זמן עצום לתיקון שהאר"י ז"ל כותב שנכון לנשק את ספר התורה 7 פעמים כנגד 7 הבלים שאמר
-                שלמה בקהלת ולבקש בדמעות מחילה מספר התורה שלא קיימנו את כל מה שכתוב בה.
-            </li>
+          <li>
+            " כל האוכל בתשיעי מעלה עליו הכתוב כאילו התענה תשיעי ועשירי." לכן
+            ישנה מצווה גדולה להרבות בסעודות שביכולתם לתקן את כל האכילות של כל
+            השנה. ע"פ המקובלים יש עניין לאכול 6 סעודות עם לחם. כמו כן ראוי לאכול
+            דגים בבוקר.
+          </li>
+          <li>
+            תשובה - להרהר המון בתשובה על כל פשעיו...יש קונה עולמו בשעה אחת,
+            אפילו ברצון תשובה אחד.
+          </li>
+          <li>
+            בקשת סליחה - נכון להחזיר כל חוב או גזילה שיש בידך, ראוי ומומלץ לבקש
+            סליחה מהאישה והילדים.
+          </li>
+          <li>
+            כפרות כדאי להקפיד על הנוסח חליפתי תמורתי כפרתי ולכוון ראשי תיבות
+            חת"ך שהוא שם קדוש שמועיל לגזור את הדין.
+          </li>
+          <li>
+            טבילה רצוי מאד מאד לטבול בערב יוה"כ 5מטבילות כנגד חמש טבילות של כהן
+            גדול ולכוון:
+            <br />
+            <ol class="list-decimal ps-10">
+              <li>להסיר כל טומאה מעליו.</li>
+              <li>להסיר הכעס.</li>
+              <li>לתקן הגבורות בחסדים.</li>
+              <li>להסיר בגדי החול.</li>
+              <li>ללבוש בגדי החג של יום הכיפורים.</li>
+            </ol>
+          </li>
+          <li>
+            הדלקת נרות- יש להדליק נר שידלוק כל יוה"כ כדי שנבדיל על נר ששבת. כמוכ
+            כדאי להדליק נר נשמה לעילוי נשמת שרה (לפי הזוהר העקידה הייתה ביוהכ
+            ואז נפטרה שרה). וכן לע"נ רבי עקיבא שזה יום פטירתו.
+          </li>
+          <li>תפילת מנחה מוקדמת עם וידוי גדול.</li>
+          <li>אחרי סעודה מפסקת לברך את הילדים בברכת האבות.</li>
+          <li>קבלת יוה"כ. -נכון להקדים קצת את קדושת היום.</li>
+          <li>
+            כל נדרי - בפתיחת ההיכל זמן עצום לתיקון שהאר"י ז"ל כותב שנכון לנשק את
+            ספר התורה 7פעמים כנגד 7 הבלים שאמר שלמה בקבלת ולבקש בדמעות מחילה
+            מספר התורה שלא קיימנו את כל מה שכתוב בה.
+          </li>
         </ol>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
