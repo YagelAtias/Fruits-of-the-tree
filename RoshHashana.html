@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ראש השנה</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>ראש השנה</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'frank-ruhl': ['"Frank Ruhl Libre"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-<h1>ראש השנה</h1>
+<body class="font-frank-ruhl text-right" dir="rtl">
+<h1 class="text-5xl font-extrabold text-center my-8 leading-tight">ראש השנה</h1>
 </body>
 </html>
