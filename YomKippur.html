@@ -41,7 +41,7 @@
       </nav>
       <div class="relative z-10 text-white flex justify-center px-4">
         <div class="w-full max-w-3xl bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-6 md:p-10">
-          <h1 class="text-3xl md:text-5xl font-extrabold text-center my-3 md:my-5 leading-tight border-b-2 border-white pb-2">
+          <h1 class="text-3xl md:text-5xl font-extrabold text-center my-3 md:my-5 leading-tight border-b-2 border-white pb-2 opacity-0 animate-[fadeUp_600ms_ease_100ms_forwards]">
             ערב יום הכיפורים
           </h1>
           <div class="container px-0 md:px-0 mt-4 md:mt-6">
@@ -94,5 +94,12 @@
         </div>
       </div>
     </div>
+
+    <style>
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; transition: none !important; }
+      }
+    </style>
   </body>
 </html>
