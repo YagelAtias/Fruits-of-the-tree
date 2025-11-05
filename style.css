@@ -33,3 +33,20 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
 }
+
+
+body.index-bg::before,
+body.rosh-hashana-bg::before,
+body.yom-kippur-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
